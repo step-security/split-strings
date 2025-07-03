@@ -1,0 +1,24 @@
+author: step-security
+name: split-strings
+description: GitHub Action to split a string into parts using a delimiter with optional limit support.
+branding:
+  icon: feather
+  color: white
+inputs:
+  string:
+    description: The input string to be split.
+    required: true
+  separator:
+    description: The delimiter used to split the string. Defaults to a space character.
+    required: false
+    default: ' '
+  limit:
+    description: Maximum number of parts to return. Use -1 to return all parts.
+    required: false
+    default: '-1'
+outputs:
+  result:
+    description: Indicates successful execution of the split operation.
+runs:
+  using: node20
+  main: dist/index.js
