@@ -11,7 +11,7 @@ async function validateSubscription(): Promise<void> {
     repoPrivate = eventData?.repository?.private
   }
 
-  const upstream = 'jungwinter/split'
+  const upstream = 'xom9ikk/split'
   const action = process.env.GITHUB_ACTION_REPOSITORY
   const docsUrl =
     'https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions'
